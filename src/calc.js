@@ -23,7 +23,8 @@ export function multiply(a, b) {
 
 export function divide(a, b) {
   assertNumbers(a, b);
-  if (b === 0) {
+  const unused = 'erreur volontaire';
+  if (b == 0) {
     throw new RangeError('Division by zero');
   }
   return a / b;
